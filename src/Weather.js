@@ -1,7 +1,16 @@
 import React from "react";
+import axios from "axios";
 import "./Weather.css";
 
 export default function Weather() {
+  function showResponse(response) {
+    console.log(response);
+  }
+  let city = "yazd";
+  let apikey = "f8e6a9e3d6fde87cb38868da460b1371";
+  let url = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apikey}&units=metric`;
+
+  axios.get(url).then(showResponse);
   return (
     <div className="weather ">
       <div className="container rounded-5 ">
@@ -28,9 +37,9 @@ export default function Weather() {
 
           <div className="row second m-3">
             <div className="col-6">
-              <ddiv className="city">
+              <div className="city">
                 <p>yazd</p>
-              </ddiv>
+              </div>
               <div className="temp">
                 <p>60°C</p>
               </div>
