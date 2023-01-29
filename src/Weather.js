@@ -3,29 +3,36 @@ import "./Weather.css";
 
 export default function Weather() {
   return (
-    <div className="weather">
-      <div className="container  rounded-5">
+    <div className="weather ">
+      <div className="container rounded-5 ">
         <div className="row ">
-          <div className="col-12 justify-content-center">
-            <div className="search ">
-              <input type="search" placeholder="Enter the city" />
-              <input type="submit" value="Search" />
+          <div className="col-12 ">
+            <div className="search  mt-5">
+              <input
+                type="search"
+                placeholder="Enter the city"
+                className="rounded-2 p-1"
+              />
+              <input type="submit" value="Search" className="rounded-2 p-1" />
             </div>
           </div>
         </div>
-        <div className="middle">
-          <div className="row m-4">
-            <div className="col-6 icon justify-content-left">🌧</div>
-            <div className="col-6 date justify-content-right">friday</div>
+        <div className="middle mt-4 mb-2">
+          <div className="row first">
+            <div className="col-6 icon justify-content-left ">🌧</div>
+            <div className="col-6 time d-flex justify-content-center">
+              <div className="col-6 day">Friday</div>
+              <div className="col-6 date align-self-center m-2">25 OCT</div>
+            </div>
           </div>
 
-          <div className="row m-4">
+          <div className="row second m-3">
             <div className="col-6">
               <ddiv className="city">
-                <h3>yazd</h3>
+                <p>yazd</p>
               </ddiv>
               <div className="temp">
-                <h1>60°C</h1>
+                <p>60°C</p>
               </div>
             </div>
             <div className="col-6">
@@ -36,10 +43,31 @@ export default function Weather() {
             </div>
           </div>
         </div>
-        <div className="row m-4">
-          <div className="bottom">
-            <div className="forecast"></div>
-            <div className="footer">Fariba</div>
+        <div className="row">
+          <div className="forecast">
+            <ul className="d-flex justify-content-evenly">
+              <li className="days">Fry</li>
+              <li className="days">Thu</li>
+              <li className="days">Mon</li>
+              <li className="days">Sun</li>
+              <li className="days">Sun</li>
+            </ul>
+          </div>
+          <div className="row">
+            <div className="bottom">
+              <div className="footer">
+                This project was coded by{" "}
+                <a href="https://www.linkedin.com/in/fariba-zare-sakhvidi/">
+                  Fariba
+                </a>{" "}
+                and is{" "}
+                <a href="https://github.com/FaribaZ/weather-application-react">
+                  Open-sourced on GitHub
+                </a>{" "}
+                and hosted on{" "}
+                <a href="https://stellar-peony-02216e.netlify.app/">Netlify</a>
+              </div>
+            </div>
           </div>
         </div>
       </div>
