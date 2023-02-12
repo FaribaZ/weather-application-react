@@ -30,7 +30,10 @@ font-family: 'Outfit', sans-serif;*/
 .container {
   text-align: center;
 }
-
+.clock {
+  font-size: 45px;
+  opacity: 0.4;
+}
 .first {
   font-size: 25px;
 }
@@ -48,6 +51,10 @@ font-family: 'Outfit', sans-serif;*/
   transform: rotate(269deg);
   opacity: 0.4;
   right: -35%;
+  font-size: 40px;
+}
+.date {
+  font-size: 30px;
 }
 .icon {
   font-size: 50px;
