@@ -41,6 +41,11 @@ font-family: 'Outfit', sans-serif;*/
 .temp {
   font-family: "Outfit", sans-serif;
 }
+.unit {
+  position: relative;
+  top: -10px;
+  font-size: 15px;
+}
 .second {
   font-family: "Outfit", sans-serif;
   font-size: 20px;

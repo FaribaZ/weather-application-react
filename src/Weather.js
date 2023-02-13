@@ -1,6 +1,9 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
 import "./Weather.css";
+import "./WeatherConversion.js";
+import WeatherConversion from "./WeatherConversion.js";
+
 function Time() {
   const [date, setDate] = useState(new Date());
 
@@ -89,7 +92,7 @@ export default function Weather() {
                 <p>{weather.name}</p>
               </div>
               <div className="temp">
-                <p>{Math.round(weather.temp)}°C</p>
+                <WeatherConversion celsius={Math.round(weather.temp)} />
               </div>
             </div>
             <div className="col-6">
