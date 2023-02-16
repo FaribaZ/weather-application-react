@@ -13,8 +13,16 @@ export default function WeatherForcast(props) {
   }
   if (loaded) {
     return (
-      <div>
-        <WeatherForecastDay data={forecast[0]} />
+      <div className="d-flex justify-content-evenly">
+        {forecast.map(function (dailyForcast, index) {
+          if (index < 5) {
+            return (
+              <div key={index}>
+                <WeatherForecastDay data={dailyForcast} />
+              </div>
+            );
+          }
+        })}
       </div>
     );
   } else {
