@@ -24,7 +24,7 @@ font-family: 'Outfit', sans-serif;*/
   top: 10%;
   bottom: 10%;
   display: grid;
-  background-color: rgb(0, 0, 0, 0.3);
+  background-color: rgb(0, 0, 0, 0.5);
 }
 
 .container {
