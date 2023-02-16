@@ -1,4 +1,5 @@
 import React from "react";
+import "./WeatherForecastDay.css";
 
 export default function WeatherForecastDay(props) {
   function maxTemp() {
@@ -8,6 +9,10 @@ export default function WeatherForecastDay(props) {
   function minTemp() {
     let temp = Math.round(props.data.temp.min);
     return `${temp}°`;
+  }
+  function showIcon() {
+    let icon = `https://openweathermap.org/img/wn/${props.data.weather[0].icon}@2x.png`;
+    return icon;
   }
   function day() {
     let date = new Date(props.data.dt * 1000);
@@ -22,7 +27,11 @@ export default function WeatherForecastDay(props) {
           <div className="days">
             <div className="forecastDay">{day()}</div>
             <div className="forecastIcon">
-              <img src={props.data.weather[0].icon} alt="weather icon" />
+              <img
+                src={showIcon()}
+                alt="weather icon"
+                style={{ width: "50px", height: "50px" }}
+              />
             </div>
             <div className="weatherTemp">
               <span className="maxTemp">{maxTemp()}</span>

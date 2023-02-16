@@ -105,7 +105,7 @@ export default function Weather() {
             </div>
           </div>
         </div>
-        <div className="row">
+        <div className="row mb-1">
           <div className="forecast">
             <div className="row">
               {weather.coordinates && (
@@ -113,7 +113,7 @@ export default function Weather() {
               )}
             </div>
           </div>
-          <div className="row mb-1">
+          <div className="row mb-3 pb-2">
             <div className="bottom">
               <div className="footer">
                 This project was coded by{" "}
