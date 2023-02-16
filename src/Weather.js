@@ -91,17 +91,17 @@ export default function Weather() {
           <div className="row second m-3">
             <div className="col-6">
               <div className="city">
-                <p>{weather.name}</p>
+                <div>{weather.name}</div>
               </div>
               <div className="temp">
                 <WeatherConversion celsius={Math.round(weather.temp)} />
               </div>
             </div>
             <div className="col-6">
-              <p className="detaile">
+              <div className="detaile">
                 <p className="wind">{Math.round(weather.wind)} MPH</p>
                 <p className="humidity">{Math.round(weather.humidity)}%</p>
-              </p>
+              </div>
             </div>
           </div>
         </div>
@@ -113,7 +113,7 @@ export default function Weather() {
               )}
             </div>
           </div>
-          <div className="row">
+          <div className="row mb-1">
             <div className="bottom">
               <div className="footer">
                 This project was coded by{" "}

@@ -12,28 +12,28 @@ export default function WeatherConversion(props) {
   }
   if (unit === "celsius") {
     return (
-      <p>
+      <div>
         {Math.round(props.celsius)}
-        <span class="unit">
+        <span className="unit">
           <a onClick={convertToCel}>°C</a>|{" "}
           <a href="/" onClick={convertToFar}>
             °F
           </a>
         </span>
-      </p>
+      </div>
     );
   } else {
     let fahrenheit = (props.celsius * 9) / 5 + 32;
     return (
-      <p>
+      <div>
         {Math.round(fahrenheit)}
-        <span class="unit">
+        <span className="unit">
           <a href="/" onClick={convertToCel}>
             °C
           </a>{" "}
           | <a onClick={convertToFar}>°F</a>
         </span>
-      </p>
+      </div>
     );
   }
 }
