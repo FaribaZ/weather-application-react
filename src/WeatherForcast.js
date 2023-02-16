@@ -18,12 +18,14 @@ export default function WeatherForcast(props) {
       </div>
     );
   } else {
-    let apiKey = "f8e6a9e3d6fde87cb38868da460b1371";
-    let longitude = props.coordinates.lon;
-    let latitude = props.coordinates.lat;
-    let apiUrl = `https://api.openweathermap.org/data/2.5/onecall?lat=${latitude}&lon=${longitude}&appid=${apiKey}&units=metric`;
+    if (props.coordinates.lat && props.coordinates.lon) {
+      let apiKey = "f8e6a9e3d6fde87cb38868da460b1371";
+      let longitude = props.coordinates.lon;
+      let latitude = props.coordinates.lat;
+      let apiUrl = `https://api.openweathermap.org/data/2.5/onecall?lat=${latitude}&lon=${longitude}&appid=${apiKey}&units=metric`;
 
-    axios.get(apiUrl).then(handleResponse);
+      axios.get(apiUrl).then(handleResponse);
+    }
 
     return null;
   }

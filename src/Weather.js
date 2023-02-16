@@ -33,7 +33,7 @@ function Time() {
 }
 
 export default function Weather() {
-  const [city, setcity] = useState("");
+  const [city, setcity] = useState("Paris");
   const [weather, setValues] = useState({});
   const [date, setDate] = useState(new Date());
   function showResponse(response) {
@@ -44,6 +44,7 @@ export default function Weather() {
       icon: `https://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`,
       name: response.data.name,
       date: new Date(response.data.dt * 1000),
+      coordinates: response.data.coord,
     });
   }
 
@@ -107,7 +108,9 @@ export default function Weather() {
         <div className="row">
           <div className="forecast">
             <div className="row">
-              <div className="col"></div>
+              {weather.coordinates && (
+                <WeatherForcast coordinates={weather.coordinates} />
+              )}
             </div>
           </div>
           <div className="row">
