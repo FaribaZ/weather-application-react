@@ -3,6 +3,7 @@ import axios from "axios";
 import "./Weather.css";
 import "./WeatherConversion.js";
 import WeatherConversion from "./WeatherConversion.js";
+import WeatherForcast from "./WeatherForcast";
 
 function Time() {
   const [date, setDate] = useState(new Date());
@@ -105,13 +106,9 @@ export default function Weather() {
         </div>
         <div className="row">
           <div className="forecast">
-            <ul className="d-flex justify-content-evenly">
-              <li className="days">Fry</li>
-              <li className="days">Thu</li>
-              <li className="days">Mon</li>
-              <li className="days">Sun</li>
-              <li className="days">Sun</li>
-            </ul>
+            <div className="row">
+              <div className="col"></div>
+            </div>
           </div>
           <div className="row">
             <div className="bottom">

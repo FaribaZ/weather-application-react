@@ -14,10 +14,7 @@ export default function WeatherForcast(props) {
   if (loaded) {
     return (
       <div>
-        <div className="row">
-          <div className="col"></div>
-          <WeatherForecastDay data={forecast[0]} />
-        </div>
+        <WeatherForecastDay data={forecast[0]} />
       </div>
     );
   } else {
