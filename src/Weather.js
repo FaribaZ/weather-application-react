@@ -106,8 +106,10 @@ export default function Weather() {
               </div>
               <div className="col-6">
                 <div className="detaile">
-                  <p className="wind">{Math.round(weather.wind)} MPH</p>
-                  <p className="humidity">{Math.round(weather.humidity)}%</p>
+                  <p className="wind">Wind: {Math.round(weather.wind)} MPH</p>
+                  <p className="humidity">
+                    Humidity: {Math.round(weather.humidity)}%
+                  </p>
                 </div>
               </div>
             </div>
