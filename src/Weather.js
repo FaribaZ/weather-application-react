@@ -45,6 +45,7 @@ export default function Weather() {
       date: new Date(response.data.dt * 1000),
       coordinates: response.data.coord,
     });
+    setDate(new Date(response.data.dt * 1000));
   }
 
   function handleSubmit(event) {
