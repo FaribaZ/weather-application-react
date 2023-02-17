@@ -16,8 +16,8 @@ font-family: 'Outfit', sans-serif;*/
 }
 
 .container {
-  max-width: 500px;
-  height: 500px;
+  max-width: 400px;
+  height: 550px;
   margin: auto;
   padding: 0 1rem;
   position: relative;
@@ -57,6 +57,9 @@ font-family: 'Outfit', sans-serif;*/
   opacity: 0.4;
   right: -35%;
   font-size: 40px;
+}
+.time {
+  margin-left: -60px;
 }
 .date {
   font-size: 30px;

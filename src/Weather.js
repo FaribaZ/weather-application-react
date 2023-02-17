@@ -93,6 +93,7 @@ export default function Weather() {
               <div className="col-6 icon justify-content-left ">
                 <img src={weather.icon} alt="weather icon" />
               </div>
+
               <Time />
             </div>
 
