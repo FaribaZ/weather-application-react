@@ -20,10 +20,7 @@ function Time() {
 
   return (
     <div className="col-6 time d-flex justify-content-center">
-      <div className="col-6 day">
-        {date.toLocaleDateString("en-US", { weekday: "short" }).toUpperCase()}
-      </div>
-      <div className="col-6 date align-self-center m-2">
+      <div className="col-6 date align-self-center ml-1">
         {date
           .toLocaleDateString("en-US", { day: "numeric", month: "short" })
           .toLocaleUpperCase()}
@@ -102,7 +99,7 @@ export default function Weather() {
                 <div className="city">
                   <div>{weather.name}</div>
                 </div>
-                <div className="temp">
+                <div className="temp mt-3">
                   <WeatherConversion celsius={Math.round(weather.temp)} />
                 </div>
               </div>

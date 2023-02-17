@@ -51,15 +51,8 @@ font-family: 'Outfit', sans-serif;*/
   font-size: 20px;
 }
 
-.day {
-  position: relative;
-  transform: rotate(269deg);
-  opacity: 0.4;
-  right: -35%;
-  font-size: 40px;
-}
 .time {
-  margin-left: -60px;
+  margin-left: -15px;
 }
 .date {
   font-size: 30px;
