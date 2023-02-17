@@ -15,7 +15,10 @@ export default function WeatherConversion(props) {
       <div>
         {Math.round(props.celsius)}
         <span className="unit">
-          <a onClick={convertToCel}>°C</a>|{" "}
+          <a href="/" onClick={convertToCel}>
+            °C
+          </a>
+          |{" "}
           <a href="/" onClick={convertToFar}>
             °F
           </a>
@@ -31,7 +34,10 @@ export default function WeatherConversion(props) {
           <a href="/" onClick={convertToCel}>
             °C
           </a>{" "}
-          | <a onClick={convertToFar}>°F</a>
+          |{" "}
+          <a href="/" onClick={convertToFar}>
+            °F
+          </a>
         </span>
       </div>
     );
